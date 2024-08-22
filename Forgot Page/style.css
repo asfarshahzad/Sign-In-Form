@@ -12,7 +12,7 @@ body {
     background-image: url(../Images/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(5px) brightness(40%);
+    backdrop-filter: blur(5px) brightness(20%);
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -27,6 +27,8 @@ body {
     border: 5px solid #f1f1f1;
     box-shadow: 0px 10px 15px -9px rgb(16, 137, 211);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 99;
 }
 
 .error-box {
@@ -109,7 +111,7 @@ button:active {
     transform: scale(.95);
 }
 
-.back-btn-box{
+.back-btn-box {
     width: 40%;
     text-align: center;
     gap: 7px;
@@ -119,7 +121,7 @@ button:active {
     transition: .4s all ease-in-out;
 }
 
-.back-btn-box i{
+.back-btn-box i {
     font-size: 15px;
     position: relative;
     top: 1px;
@@ -133,10 +135,77 @@ button:active {
     color: rgb(102, 97, 97);
 }
 
-.back-btn-box:hover{
+.back-btn-box:hover {
     transform: scale(1.05);
 }
 
-.back-btn-box:hover i{
+.back-btn-box:hover i {
     transform: translateX(-20%);
+}
+
+.signin-space-1,
+.signin-space-1 .signin-stars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+.signin-space-1 .signin-stars {
+    background-image: radial-gradient(2px 2px at 50px 200px, rgb(18, 177, 209), rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 40px 70px, #ffffff79, rgba(0, 0, 0, 0)), radial-gradient(3px 4px at 120px 40px, #ffffff79, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    opacity: 0;
+    animation: zoom 10s infinite;
+}
+
+.signin-space-1 .signin-stars:nth-child(1) {
+    background-position: 10% 90%;
+    animation-delay: 0s;
+}
+
+.signin-space-2,
+.signin-space-2 .signin-stars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.signin-space-2 .signin-stars {
+    background-image: radial-gradient(2px 2px at 50px 300px,  rgb(16, 137, 211), rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 80px, #ffffff79, rgba(0, 0, 0, 0)), radial-gradient(3px 4px at 120px 40px, #ffffff79, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 250px 250px;
+    opacity: 0;
+    animation: zoom 12s infinite;
+}
+
+.signin-space-2 .signin-stars:nth-child(1) {
+    background-position: 10% 90%;
+    animation-delay: 0s;
+}
+
+
+@keyframes zoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+        transform: rotate(5deg);
+        animation-timing-function: ease-in;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+        transform: scale(2.2);
+    }
+
 }
