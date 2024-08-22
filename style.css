@@ -47,7 +47,7 @@ body {
     width: 100%;
     padding: 16px 20px 16px 45px;
     border-radius: 50px;
-    box-shadow: 0px 5px 10px -3px rgb(16, 137, 211, 0.5);
+    box-shadow: 0px 5px 3px rgb(16, 137, 211, 0.5);
     outline: none;
     border: none;
     border-inline: 3px solid transparent;
@@ -60,9 +60,9 @@ body {
 
 .input-box i{
     position: absolute;
-    top: 28px;
+    top: 27.5px;
     left: 18px;
-    font-size: 15px;
+    font-size: 16px;
     color: rgb(16, 137, 211);
 }
 
@@ -215,7 +215,7 @@ button:active{
     background-repeat: repeat;
     background-size: 250px 250px;
     opacity: 0;
-    animation: zoom 12s infinite;
+    animation: zoom 13s infinite;
 }
 
 .signin-space-2 .signin-stars:nth-child(1) {
