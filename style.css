@@ -12,13 +12,13 @@ body {
     background-image: url(./Images/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) brightness(40%);
     background-repeat: no-repeat;
 }
 
 .container {
-    margin-top: 70px;
-    margin-bottom: 59px;
+    margin-top: 40px;
+    margin-bottom: 62px;
     width: 27%;
     background: #F8F9FD;
     font-family: sans-serif;
@@ -66,7 +66,7 @@ body {
 
 
 .forgot{
-    margin: 10px 15px 15px;
+    margin: 10px 10px 15px;
 }
 
 .forgot a {
@@ -100,6 +100,22 @@ button:hover {
 button:active{
     transform: scale(.95);
 }
+
+.account-box{
+    margin-bottom: 25px;
+}
+
+.account-box p{
+    font-size: 12px;
+    margin: 8px 10px;
+    color: rgb(143, 139, 139);
+}
+
+.account-box p a{
+    color: rgb(16, 137, 211);
+    font-weight: 600;
+}
+
 
 .title {
     display: block;
